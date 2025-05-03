@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Ecdysiz - Meta Tag Generator</title>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Get Advanced Meta Tags with <span class="highlight">Ecdysiz</span></h1>
+            <p>Generate optimized meta tags for better SEO performance</p>
+        </div>
+        
+        <div class="tool-container">
+            <form id="metaTagForm">
+                <div class="form-group">
+                    <label for="pageTitle">Page Title</label>
+                    <input type="text" id="pageTitle" placeholder="Enter your page title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pageDescription">Page Description</label>
+                    <textarea id="pageDescription" placeholder="Enter a detailed description of your page content" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="keywords">Keywords (comma separated)</label>
+                    <input type="text" id="keywords" placeholder="e.g. SEO, meta tags, web development">
+                </div>
+                
+                <div class="form-group">
+                    <label for="pageURL">Page URL (optional)</label>
+                    <input type="url" id="pageURL" placeholder="https://example.com/page">
+                </div>
+                
+                <div class="option-group">
+                    <h3>Additional Meta Tags</h3>
+                    
+                    <div class="toggle-container">
+                        <span>Open Graph (Facebook)</span>
+                        <label class="switch">
+                            <input type="checkbox" id="ogTags" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="toggle-container">
+                        <span>Twitter Card</span>
+                        <label class="switch">
+                            <input type="checkbox" id="twitterTags" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="toggle-container">
+                        <span>Robots</span>
+                        <label class="switch">
+                            <input type="checkbox" id="robotsTags" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="btn-container">
+                    <button type="button" class="btn" id="generateBtn">GENERATE META TAGS</button>
+                </div>
+            </form>
+            
+            <div class="loading" id="loading" style="display: none;"></div>
+            
+            <div class="result-container" id="resultContainer" style="display: none;">
+                <h3>Generated Meta Tags</h3>
+                <p>Copy and paste these tags into the <code>&lt;head&gt;</code> section of your HTML document:</p>
+                <pre class="result-code" id="resultCode"></pre>
+                <button class="copy-btn" id="copyBtn">Copy to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+ 
+
+
+ 
